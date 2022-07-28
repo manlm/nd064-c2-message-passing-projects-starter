@@ -1,0 +1,5 @@
+The Person Service and Connection Service only provide APIs for web client, therefor using REST for message passing is suitable
+
+The high volume of location data might put heavy pressure on the database, therefor split the Location Servicce into 2 parts using kafka to mitigate the workload
+
+Assuming that location data of user can be sent to Location Producer via gRPC, use gRPC in this case for speed and lightweight
