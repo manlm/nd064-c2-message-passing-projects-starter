@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-data:
-  APP: "connection"
-metadata:
-  name: connection-env
