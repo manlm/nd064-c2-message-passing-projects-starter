@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "7def4204-d6d4-4dc6-a48e-a4d897807e7d",
+    "name": "UDAConnect",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "get_persons",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:30001/api/persons",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "30001",
+          "path": [
+            "api",
+            "persons"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_person_id_1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:30001/api/persons/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "30001",
+          "path": [
+            "api",
+            "persons",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_connection_person_id_1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:30001/api/persons/1/connection?distance=5&end_date=2023-01-01&start_date=2000-01-01",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "30001",
+          "path": [
+            "api",
+            "persons",
+            "1",
+            "connection"
+          ],
+          "query": [
+            {
+              "key": "distance",
+              "value": "5"
+            },
+            {
+              "key": "end_date",
+              "value": "2023-01-01"
+            },
+            {
+              "key": "start_date",
+              "value": "2000-01-01"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_locations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:30004/api/locations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "30004",
+          "path": [
+            "api",
+            "locations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get_locations_id_41",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:30004/api/locations/41",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "30004",
+          "path": [
+            "api",
+            "locations",
+            "41"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
